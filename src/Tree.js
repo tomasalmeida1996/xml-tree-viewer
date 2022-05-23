@@ -10,7 +10,7 @@ const Tree = ({ xml }) => {
 
     return(
     <div>
-        {xml2 ? (<pre>{JSON.stringify(xml2["xacml3:policy"], null, 2)}</pre>):
+        {xml2 ? (<pre>{JSON.stringify(xml2, null, 2)}</pre>):
         // (xml2.map((xmlElement, index) => (
         //     <li key={index} onClick={event => onClick(xmlElement, event)}>
         //         {xmlElement.name}
