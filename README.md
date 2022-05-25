@@ -3,6 +3,7 @@ Website where a user can upload an XML file and automatically see it in a tree v
 
 # Run the website
 ● run *npm install* to install dependencies.<br>
+● Copy file webpack.config.js from folder "./lib" to "./node_modules/react-scripts/config".<br>
 ● run *npm start* to start react App.<br>
 
 # Functionalities

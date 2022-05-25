@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Tree from './Tree';
 import axios from 'axios';
 import XMLData from './data/xmldata.xml';
