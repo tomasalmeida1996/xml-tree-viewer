@@ -17,9 +17,5 @@ Website where a user can upload an XML file and automatically see it in a tree v
 # Packages
 ● axios used for xml file data upload.<br>
 ● xml2js used for data parsing from xml to js object.<br>
-● webpack < 5 used to include polyfills for node.js. <br>
-  ● Packages not included in webpack v5:<br>
-    ● timers-browserify<br>
-    ● buffer<br>
-    ● stream-browserify<br>
-  ● To solve this, fallbacks were added to the webpack.config.js file.<br>
+● webpack < 5 used to include polyfills for node.js.
+● Packages not included in webpack v5: timers-browserify, buffer, stream-browserify. To solve this, fallbacks were added to the webpack.config.js file.<br>
