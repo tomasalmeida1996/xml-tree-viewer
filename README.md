@@ -9,7 +9,7 @@ Website where a user can upload an XML file and automatically see it in a tree v
 ● Website where a user can upload a XML file.<br>
 ● The XML is parsed and presented to the user graphically as a tree diagram.<br>
 
-# Imcompleted Tasks
+# Incompleted Tasks
 ● The file import fom local machine is not implemented, so the react App always uses an example xml file called 'xmldata.xml'.<br>
-● The user interface is not .<br>
 ● Not much attention was taken to the user interface part. The intention would be to have a tree element with clickable elements and collapsable items.<br>
+● There is not a xml branch rule verification.<br>
