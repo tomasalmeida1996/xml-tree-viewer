@@ -13,3 +13,13 @@ Website where a user can upload an XML file and automatically see it in a tree v
 ● The file import fom local machine is not implemented, so the react App always uses an example xml file called 'xmldata.xml'.<br>
 ● Not much attention was taken to the user interface part. The intention would be to have a tree element with clickable elements and collapsable items.<br>
 ● There is not a xml branch rule verification.<br>
+
+# Packages
+● axios used for xml file data upload.<br>
+● xml2js used for data parsing from xml to js object.<br>
+● webpack < 5 used to include polyfills for node.js. <br>
+  ● Packages not included in webpack v5:<br>
+    ● timers-browserify<br>
+    ● buffer<br>
+    ● stream-browserify<br>
+  ● To solve this, fallbacks were added to the webpack.config.js file.<br>
