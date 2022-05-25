@@ -21,20 +21,22 @@ function App() {
   }
 
   // On file select (from the pop up) 
-  const onFileChange = event => { 
-    // Update the state 
+  const onFileChange = event => {     
     const file = event.target.files[0] //? case user cancels
     console.log("file type",event.target.files[0]?.type)
     
     if(!file){//user cancels
+      // Update the state 
       setError("Select file!");
       setSelectedFile(null);
       setXML(null);
     }
     else if(file && file.type !== "text/xml"){
+      // error message
       setError("Incorrect file type!");
     }
     else{
+      // Update the state 
       setSelectedFile(file);       
       setError("");
     }
@@ -49,7 +51,7 @@ function App() {
 
   return (
     <div className="App">
-      <h3> Upload File! </h3> 
+      <h3> Upload XML File! </h3> 
       <h5> {error} </h5> 
       <input type="file" 
       onChange={onFileChange} 
